@@ -1,0 +1,21 @@
+.work_detail {
+    display: none;
+}
+
+.work {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ul.stagger4 {
+    list-style: none;
+}
+
+ul.stagger4 li{
+    list-style: none;
+    margin-left: -40px;
+}
+
+.work_detail_content h2 {
+    margin-top: 0;
+}

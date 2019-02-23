@@ -1,0 +1,317 @@
+.title_section h2 {
+    color: #141414;
+}
+
+.title_section h3 {
+    color: #bfbfbf;
+}
+
+.navigation-top-fixed.navigation-collapse {
+    background: #141414;
+}
+
+.mobile a {
+    color: #fff;
+}
+
+.logo > h1 > a {
+    color: #fff;
+}
+
+.logo > h1 > a span {
+    color: #808080;
+}
+
+.menu > nav > ul> li > a {
+    color: #eaeaea;
+}
+
+.intro.youtube {
+    background: #141414;
+}
+
+.intro:before {
+    background: rgba(0,0,0,0.85);
+}
+
+.intro.youtube:before {
+    background: rgba(0,0,0,0.80);
+}
+
+.banner_text {
+    color: #fff;
+}
+
+.banner_text hr {
+    border-top: 4px solid #fff;
+}
+
+.banner_text h4 {
+    color: #eaeaea;
+}
+
+.skills-name {
+    border: 2px solid #141414;
+}
+
+.skill-bar-inner {
+    background: #141414;
+}
+
+.services:before {
+    background: rgba(0,0,0,0.90);
+}
+
+.icon-service {
+    color: #fff;
+}
+
+.box-service h3 {
+    color: #fff;
+}
+
+.box-service p {
+    color: #eaeaea;
+}
+
+.list_resume:before {
+    border: 2px solid #141414;
+    background: #fff;
+}
+
+.list_resume {
+    border-left: 2px solid #141414;
+}
+
+.years {
+    color: #bfbfbf;
+}
+
+.btn-download {
+    background: #141414;
+    border: 1px solid #141414;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn-download:hover {
+    background: #fff;
+    color: #141414;
+}
+
+.fun-fact:before {
+    background: rgba(0,0,0,0.90);
+}
+
+.box-fun-fact {
+    text-align: center;
+}
+
+.icon-fun-fact {
+    color: #fff;
+}
+
+.box-fun-fact h3 {
+    color: #fff;
+}
+
+.box-fun-fact p {
+    color: #eaeaea;
+}
+
+.portfolio-item-hover {
+    background: rgba(0,0,0,0.85);
+}
+
+.portfolio-text h3 {
+    color: #fff;
+}
+
+.portfolio-text p {
+    color: #eaeaea;
+}
+
+.hire:before {
+    background: rgba(0,0,0,0.85);
+}
+
+.text_hire h2 {
+    color: #fff;
+}
+
+.text_hire a {
+    background: #fff;
+    color: #141414;
+    border: 1px solid #fff;
+}
+
+.text_hire a:hover {
+    background: #141414;
+    color: #fff;
+}
+
+.testimonial:before {
+    background: rgba(0,0,0,0.85);
+}
+
+.testimonial .title_section h2 {
+    color: #fff;
+}
+
+.testimonial .title_section p {
+    color: #eaeaea;
+}
+
+.owl-slides .items .description {
+    color: #fff;
+}
+
+.owl-slides .items .who-name {
+    color: #fff;
+}
+
+.owl-slides .items .company-name {
+    color: #fff;
+}
+
+.testimonial .owl-dot.active span {
+    background: #fff;
+    border: 2px solid #fff;
+}
+
+.footer {
+    background: #141414;
+}
+
+.copyright {
+    color: #fff;
+}
+
+.copyright-link {
+    color: #bfbfbf;
+ }
+
+.copyright-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media a {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    position: relative;
+    color: #fff;
+}
+
+
+.social-media a:hover {
+    color: #141414;
+    background: #fff;
+    border: 1px solid #141414;
+}
+
+.page-title:before {
+    background: rgba(0,0,0,0.85);
+}
+
+.page-title .title_section h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.box-blog .blog-description h3 a:hover {
+    color: #bfbfbf;
+}
+
+.box-blog .blog-description hr {
+    border-top: 2px solid #141414;
+}
+
+.pagination-blog ul li a {
+    border: 1px solid #141414;
+    color: #141414;
+}
+
+.pagination-blog ul li a:hover,
+.pagination-blog ul li.angle a {
+    background: #141414;
+    color: #fff;
+}
+
+.pagination-blog ul li.active a {
+    background: #fff;
+    color: #141414;
+    border: 1px solid transparent;
+}
+
+.pagination-blog ul li.angle a:hover {
+    background: #fff;
+    color: #141414;
+}
+
+.btn-search {
+    background: #141414;
+    border: 1px solid #141414;
+    color: #fff;
+}
+
+.widget-box + hr {
+    border-top: 2px solid #141414;
+}
+
+.content-recent h4 a:hover {
+    color: #bfbfbf;
+}
+
+.tag {
+    background: #141414;
+    border: 1px solid #141414;
+    color: #fff;
+}
+
+.tag:hover {
+    background: #fff;
+    color: #141414;
+}
+
+.box-single-blog .single-blog-description .meta span .single-tag {
+    background: #141414;
+    border: 1px solid #141414;
+    color: #fff;
+}
+
+.box-single-blog .single-blog-description hr {
+    border-top: 2px solid #141414;
+}
+
+blockquote {
+    border-left: 3px solid #141414;
+}
+
+.reply-comment {
+    background: #141414;
+    border: 1px solid #141414;
+    color: #fff;
+}
+
+.reply-comment:hover {
+    background: #fff;
+    color: #141414;
+}
+
+@media screen and (max-width: 990px){
+    
+    .mobile {
+        display: block;
+    }
+    
+    .menu {
+        background: #141414;
+    }
+    
+    .menu > nav > ul> li > a {
+        color: #eaeaea;
+    }
+    
+}

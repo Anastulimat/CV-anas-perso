@@ -1,0 +1,1625 @@
+/* =======================================================================================
+* Author        : Anas TULIMAT
+*
+* File          : assets / css file
+*
+* Version       : 1.0
+=========================================================================================*/
+
+
+
+/* TABLE OF CONTENT
+===========================================================================================
+
+00. Body, links, paragraphs, general style
+
+01. Preloader
+
+02. Navigation
+
+03. Section Intro
+
+04. Section About
+
+05. Section Services
+
+06. Section Resume
+
+07. Section Fun Fact
+
+08. Section Portfolio
+
+09. Section Hire Me
+
+10. Section Blogs
+
+11. Section Testimonial
+
+12. Section Contact
+
+13. Section Map
+
+14. Footer
+
+15. Section Page Title
+
+16. Section Page
+
+17. Responsive
+
+========================================================================================= */
+
+
+@font-face {
+    font-family: Windsong;
+    src: url(../fonts/Windsong.ttf);
+}
+
+/*====================================================
+    00. Body, links, paragraphs, general style
+====================================================*/
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    color: #565656;
+    font-family: 'Athiti', sans-serif;
+    font-weight: 300;
+}
+
+h1,h2,h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section {
+    padding: 90px 0 60px;
+}
+
+.title_section {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.content_section {
+    position: relative;
+}
+
+.title_section h2 {
+    font-size: 50px;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.title_section h3 {
+    margin: -20px 0 0 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.title_section p {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.signature {
+    font-family: 'Windsong';
+    font-weight: 700;
+    font-size: 42px;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    margin: 30px 0 0 0;
+}
+
+blockquote {
+    background: #f5f5f5;
+}
+
+.has-error .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.list-unstyled li {
+    font-weight: 700;
+}
+
+.message-error {
+    background: #ffabab;
+    color: #a94442;
+    padding: 5px 20px;
+    font-weight: 700;
+    display: none;
+}
+
+.message-success {
+    background: #86f5a8;
+    color: #238441;
+    padding: 5px 20px;
+    font-weight: 700;
+    display: none;
+}
+
+/*====================================================
+    01. Preloader
+====================================================*/
+.preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 999;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.cell-preloader {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+#loader {
+	margin: auto;
+	width: 65px;
+}
+
+#loader ul {
+    margin: 0;
+    list-style: none;
+    width: 65px;
+    height: 57px;
+    position: relative;
+    padding: 5px;
+    height: 65px;
+}
+
+#loader ul li {
+	position: absolute;
+	width: 2px;
+	height: 0;
+	background-color: rgb(0,0,0);
+	bottom: 0;
+}
+
+#loader li:nth-child(1) {
+	left: -7px;
+	animation: sequence1 0.75s ease infinite 0s;
+    -o-animation: sequence1 0.75s ease infinite 0s;
+    -ms-animation: sequence1 0.75s ease infinite 0s;
+    -webkit-animation: sequence1 0.75s ease infinite 0s;
+    -moz-animation: sequence1 0.75s ease infinite 0s;
+}
+#loader li:nth-child(2) {
+	left: 5px;
+	animation: sequence2 0.75s ease infinite 0.075s;
+    -o-animation: sequence2 0.75s ease infinite 0.075s;
+    -ms-animation: sequence2 0.75s ease infinite 0.075s;
+    -webkit-animation: sequence2 0.75s ease infinite 0.075s;
+    -moz-animation: sequence2 0.75s ease infinite 0.075s;
+}
+#loader li:nth-child(3) {
+	left: 17px;
+	animation: sequence1 0.75s ease-in-out infinite 0.15s;
+    -o-animation: sequence1 0.75s ease-in-out infinite 0.15s;
+    -ms-animation: sequence1 0.75s ease-in-out infinite 0.15s;
+    -webkit-animation: sequence1 0.75s ease-in-out infinite 0.15s;
+    -moz-animation: sequence1 0.75s ease-in-out infinite 0.15s;
+}
+#loader li:nth-child(4) {
+	left: 29px;
+	animation: sequence2 0.75s ease-in infinite 0.225s;
+    -o-animation: sequence2 0.75s ease-in infinite 0.225s;
+    -ms-animation: sequence2 0.75s ease-in infinite 0.225s;
+    -webkit-animation: sequence2 0.75s ease-in infinite 0.225s;
+    -moz-animation: sequence2 0.75s ease-in infinite 0.225s;
+}
+#loader li:nth-child(5) {
+	left: 41px;
+	animation: sequence1 0.75s ease-in-out infinite 0.3s;
+    -o-animation: sequence1 0.75s ease-in-out infinite 0.3s;
+    -ms-animation: sequence1 0.75s ease-in-out infinite 0.3s;
+    -webkit-animation: sequence1 0.75s ease-in-out infinite 0.3s;
+    -moz-animation: sequence1 0.75s ease-in-out infinite 0.3s;
+}
+#loader li:nth-child(6) {
+	left: 53px;
+	animation: sequence2 0.75s ease infinite 0.375s;
+    -o-animation: sequence2 0.75s ease infinite 0.375s;
+    -ms-animation: sequence2 0.75s ease infinite 0.375s;
+    -webkit-animation: sequence2 0.75s ease infinite 0.375s;
+    -moz-animation: sequence2 0.75s ease infinite 0.375s;
+}
+
+@keyframes sequence1 {
+	0% {
+		height: 9px;
+	}
+	50% {
+		height: 44px;
+	}
+	100% {
+		height: 9px;
+	}
+}
+
+@-o-keyframes sequence1 {
+	0% {
+		height: 9px;
+	}
+	50% {
+		height: 44px;
+	}
+	100% {
+		height: 9px;
+	}
+}
+
+@-ms-keyframes sequence1 {
+	0% {
+		height: 9px;
+	}
+	50% {
+		height: 44px;
+	}
+	100% {
+		height: 9px;
+	}
+}
+
+@-webkit-keyframes sequence1 {
+	0% {
+		height: 9px;
+	}
+	50% {
+		height: 44px;
+	}
+	100% {
+		height: 9px;
+	}
+}
+
+@-moz-keyframes sequence1 {
+	0% {
+		height: 9px;
+	}
+	50% {
+		height: 44px;
+	}
+	100% {
+		height: 9px;
+	}
+}
+
+@keyframes sequence2 {
+	0% {
+		height: 17px;
+	}
+	50% {
+		height: 57px;
+	}
+	100% {
+		height: 17px;
+	}
+}
+
+@-o-keyframes sequence2 {
+	0% {
+		height: 17px;
+	}
+	50% {
+		height: 57px;
+	}
+	100% {
+		height: 17px;
+	}
+}
+
+@-ms-keyframes sequence2 {
+	0% {
+		height: 17px;
+	}
+	50% {
+		height: 57px;
+	}
+	100% {
+		height: 17px;
+	}
+}
+
+@-webkit-keyframes sequence2 {
+	0% {
+		height: 17px;
+	}
+	50% {
+		height: 57px;
+	}
+	100% {
+		height: 17px;
+	}
+}
+
+@-moz-keyframes sequence2 {
+	0% {
+		height: 17px;
+	}
+	50% {
+		height: 57px;
+	}
+	100% {
+		height: 17px;
+	}
+}
+
+/*====================================================
+    02. Navigation
+====================================================*/
+.navigation-top-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.navigation-top-fixed.navigation-collapse {
+    -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo > h1 {
+    margin: 8px 0 0 0;
+    line-height: 1;
+    font-size: 31px;    
+    padding: 25px 0;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.navigation-top-fixed.navigation-collapse .logo > h1 {
+    padding: 13px 0;
+}
+
+.logo > h1 > a {
+    text-decoration: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.logo > h1 > a > span {
+    color: red;
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile a {
+    display: block;
+    font-size: 38px;
+    padding: 21px 0;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.navigation-top-fixed.navigation-collapse .mobile a {
+    padding: 9px 0;
+}
+
+.menu > nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+
+.menu > nav > ul> li {
+    float: left;
+    padding: 30px 20px;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.navigation-top-fixed.navigation-collapse .menu > nav > ul> li {
+    padding: 15px 20px;
+}
+
+.menu > nav > ul> li > a {
+    text-decoration: none;
+    font-size: 18px;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+/* .navigation-top-fixed.navigation-collapse .menu > nav > ul> li.active > a,
+.menu > nav > ul> li.active > a, */
+
+.menu > nav > ul> li > a:hover {
+    text-decoration: none;
+    padding-bottom:4px;
+}
+
+.menu > nav > ul > li > a.hvr-underline-from-left::before
+{
+    background: #d7e7df;
+    height: 2px;
+}
+
+/*====================================================
+    03. Section Intro
+====================================================*/
+.intro {
+    background-size: cover;
+    height: 100vh;
+    padding: 260px 0;
+    position: relative;
+}
+
+.intro:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+
+.intro .container {
+    position: static!important;
+}
+
+.banner_text {
+    text-align: left;
+    position: absolute;
+    bottom: 80px;
+    padding-right: 20px;
+    z-index: 10;
+}
+
+.banner_text h1 {
+    font-size: 65px;
+    line-height: 72px;
+    margin: 0;
+}
+
+.banner_text hr {
+    width: 100px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner_text h4 {
+    font-size: 35px;
+    line-height: 38px;
+    margin: 0;
+}
+
+/*====================================================
+    04. Section About
+====================================================*/
+.section.about,
+.section.about .container {
+    position: relative;
+}
+
+.about-left img {
+    width: 100%;
+}
+
+.photo-social
+{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.badge.social {
+    background: #ccc;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 5px 20px 0;
+    padding: 0;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    color: #fff;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+}
+
+.badge.social:hover {
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+    background: #141414;
+    color: #ccc;
+}
+
+.story {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.skills-info {
+    margin-top: 18px;
+}
+
+.skills-progress {
+    width: 100%;
+    height: 5px;
+    margin-bottom: 55px;
+    position: relative;
+    background: #efefef;
+}
+
+.skills-name {
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 13px;
+    z-index: 2;
+    color: #141414;
+    position: absolute;
+    background: #ffffff;
+    padding: 6px 15px;
+    top: -12px;
+}
+
+.skill-bar-inner {
+    height: 5px;
+    width: 0%;
+    position: relative;
+    -webkit-transition: 0.8s linear;
+    -moz-transition: 0.8s linear;
+    -ms-transition: 0.8s linear;
+    -o-transition: 0.8s linear;
+    transition: 0.8s linear;
+}
+
+/*====================================================
+    05. Section Services
+====================================================*/
+.services {
+    padding: 60px 0;
+    background-size: cover;
+    background-color: #bfbfbf;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.services:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.box-service {
+    text-align: center;
+}
+
+.icon-service {
+    font-size: 60px;
+}
+
+.box-service h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.box-service p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+/*====================================================
+    06. Section Resume
+====================================================*/
+.list_resume {
+    padding: 35px 30px 40px;
+    position: relative;
+}
+
+.list_resume:last-child {
+    padding: 35px 30px 10px;
+}
+
+.list_resume:before {
+    width: 20px;
+    height: 20px;
+    display: block;
+    top: 5px;
+    position: absolute;
+    left: -11px;
+    border-radius: 10px;
+    content: '';
+}
+
+.years {
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+}
+
+.list_resume h1 {
+    font-size: 21px;
+    color: #141414;
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+
+.list_resume p {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 60px;
+    font-size: 18px;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.btn-download:hover {
+    text-decoration: none;
+}
+
+/*====================================================
+    07. Section Fun Fact
+====================================================*/
+.fun-fact {
+    padding: 60px 0;
+    background-size: cover;
+    background-color: #bfbfbf;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.fun-fact:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.box-fun-fact {
+    text-align: center;
+}
+
+.icon-fun-fact {
+    font-size: 60px;
+}
+
+.box-fun-fact h3 {
+    color: #141414;
+    font-size: 20px;
+}
+
+.box-fun-fact p {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 0;
+}
+
+.box-fun-fact p.message {
+    font-size: 18px !important;
+    line-height: 18px !important;
+    margin-bottom: 0;
+}
+
+.box-fun-fact a {
+    color: #8c8c8c;
+}
+
+.box-fun-fact a:hover {
+    text-decoration: none;
+}
+
+/*====================================================
+    08. Section Portfolio
+====================================================*/
+.portfolio {
+    padding: 90px 0 30px;
+}
+
+.portfolio-filter {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-filter ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.portfolio-filter ul li {
+    float: left;
+    font-size: 18px;
+    padding: 0 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.portfolio-filter ul li.active {
+    text-decoration: line-through;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.portfolio-item-inner {
+    position: relative;
+}
+
+.portfolio-item-inner a {
+    display: block;
+    overflow: hidden;
+    outline: none;
+}
+
+.portfolio-item-inner a img {
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.portfolio-item-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.portfolio-text {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.portfolio-text h3 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+.portfolio-text p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.portfolio-item-inner a:hover .portfolio-item-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-item-inner a:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portfolio-item-inner a:hover .portfolio-text {
+    bottom: 20px;
+}
+
+/*====================================================
+    09. Section Hire Me
+====================================================*/
+.hire {
+    padding: 60px 0;
+    background-size: cover;
+    background-color: #bfbfbf;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hire:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.text_hire {
+    position: relative;
+    text-align: center;
+}
+
+.text_hire h2 {
+    margin: 0;
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.text_hire a {
+    margin-top: 30px;
+}
+
+/*====================================================
+    10. Section Blogs
+====================================================*/
+.box-blog .blog-image a {
+    display: block;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.box-blog .blog-image a:hover {
+    opacity: 0.6;
+}
+
+.box-blog .blog-image a img {
+    width: 100%;
+}
+
+.box-blog .blog-description h3 {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.box-blog .blog-description h3 a {
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+    color: #141414;
+    text-decoration: none;
+}
+
+.box-blog .blog-description .meta {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #565656;
+    font-style: italic;
+}
+
+.box-blog .blog-description .meta span {
+    vertical-align: middle;
+}
+
+.meta .icon.m-10 {
+    margin-left: 10px;
+}
+
+.box-blog .blog-description hr {
+    width: 100px;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.box-blog .blog-description p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 0;
+}
+
+/*====================================================
+    11. Section Testimonial
+====================================================*/
+.testimonial {
+    padding: 60px 0 120px;
+    background-size: cover;
+    background-color: #bfbfbf;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.testimonial:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.owl-slides {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.owl-slides .items {
+    text-align: center;
+    cursor: move;
+}
+
+.owl-slides .items .photo {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    border-radius: 999px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.owl-slides .items .description {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.owl-slides .items .who-name {
+    font-size: 18px;
+    line-height: 27px;
+    line-height: 1;
+    margin-bottom: 7px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+.owl-slides .items .company-name {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.testimonial .owl-dots {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.testimonial .owl-dot {
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.testimonial .owl-dot:last-child {
+    margin-right: 0;
+}
+
+.testimonial .owl-dot span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #bfbfbf;
+    border-radius: 999px;
+    border: 2px solid #bfbfbf;
+}
+
+/*====================================================
+    12. Section Contact
+====================================================*/
+.contact p {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.contact_info {
+    margin-top: 30px;
+}
+
+.contact_info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact_info ul li {
+    margin-bottom: 20px;
+}
+
+.contact_info ul li h3 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+    color: #141414;
+}
+
+.form {
+    padding-top: 5px;
+}
+
+.form .btn-download {
+    margin-top: 0;
+}
+
+.form-control {
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f7f7f7;
+    width: 100%;
+    height: 45px;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #141414;
+    background-color: #f7f7f7;
+    background-image: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #141414;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/*====================================================
+    13. Section Map
+====================================================*/
+.map {
+    height: 400px;
+    background: #f7f7f7;
+}
+
+/*====================================================
+    14. Footer
+====================================================*/
+.footer {
+    padding: 60px 0;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 10px;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -mos-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.social-media a:hover {
+    background: transparent;
+}
+
+.social-media a:last-child {
+    margin-right: 0;
+}
+
+.copyright {
+    font-size: 18px;
+}
+
+/*====================================================
+    15. Section Page Title
+====================================================*/
+.page-title {
+    padding: 120px 0 60px;
+    background-size: cover;
+    background-color: #bfbfbf;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.page-title:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.page-title .title_section {
+    margin-bottom: 0;
+}
+
+
+/*====================================================
+    16. Section Page
+====================================================*/
+.blog_page .item-blog {
+    margin-bottom: 30px;
+}
+
+.pagination-blog {
+    margin-top: 60px;
+}
+
+.pagination-blog ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.pagination-blog ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.pagination-blog ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 18px;
+    color: #555;
+    text-decoration: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -mos-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.widget-box {
+    margin-bottom: 30px;
+}
+
+.widget-box h3 {
+    margin: 0;
+    color: #141414;
+    font-size: 23px;
+    line-height: 26px;
+    font-family: 'Athiti', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.widget-box + hr {
+    width: 100px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.content-widget {
+    position: relative;
+}
+
+.form-search {
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f7f7f7;
+    width: 100%;
+    height: 45px;
+    padding: 10px 100px 10px 20px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #141414;
+    background-color: #f7f7f7;
+    background-image: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-search:focus {
+    border-color: #141414;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    padding: 7px 19px;
+    font-size: 25px;
+    text-decoration: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.content-widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-widget ul li {
+    margin-bottom: 20px;
+}
+
+.content-recent {
+    min-height: 10px;
+}
+
+.content-recent .meta {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #565656;
+    font-style: italic;
+}
+
+.content-recent .meta span {
+    vertical-align: middle;
+}
+
+.content-recent h4 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Merriweather', serif;
+}
+
+.content-recent h4 a {
+    color: #141414;
+    text-decoration: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.advert {
+    width: 100%;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 16px;
+    padding: 3px 15px;
+    margin-right: 3px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.tag:hover {
+    text-decoration: none;
+}
+
+.box-single-blog .single-blog-image img {
+    width: 100%;
+}
+
+.box-single-blog .single-blog-description h3 {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #141414;
+}
+
+.box-single-blog .single-blog-description .meta {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #565656;
+    font-style: italic;
+}
+
+.box-single-blog .single-blog-description .meta span {
+    vertical-align: middle;
+}
+
+.box-single-blog .single-blog-description .meta span .single-tag {
+    display: inline-block;
+    padding: 2px 6px;
+    line-height: 1;
+    margin-right: -1px;
+    text-decoration: none;
+}
+
+.box-single-blog .single-blog-description hr {
+    width: 100px;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.box-single-blog .single-blog-description p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.comments-single-blog {
+    margin-top: 60px;
+}
+
+.comments-single-blog h3 {
+    margin: 0;
+    color: #141414;
+    font-size: 23px;
+    line-height: 26px;
+    font-family: 'Athiti', sans-serif;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.box-comment {
+    margin-bottom: 60px;
+}
+
+.box-comment img {
+    width: 110px;
+    height: 110px;
+    float: left;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    border-radius: 999px;
+}
+
+.box-comment .in-comment {
+    padding-left: 140px;
+}
+
+.box-comment .in-comment h5 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Merriweather', serif;
+    color: #141414;
+    position: relative;
+}
+
+.box-comment .in-comment h5 span {
+    color: #141414;
+    font-size: 16px;
+    font-family: 'Athiti', sans-serif;
+    position: absolute;
+    right: 0;
+    top: 1px;
+}
+
+.reply-comment {
+    display: inline-block;
+    padding: 2px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.reply-comment:hover {
+    text-decoration: none;
+}
+
+.form-comment .btn-download {
+    margin-top: 0;
+}
+
+/*====================================================
+    17. Responsive
+====================================================*/
+@media screen and (max-width: 990px){
+    
+    .mobile {
+        display: block;
+    }
+    
+    .menu {
+        float: left!important;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: 0.3s linear;
+        -moz-transition: 0.3s linear;
+        -ms-transition: 0.3s linear;
+        -o-transition: 0.3s linear;
+        transition: 0.3s linear;
+    }
+    
+    .menu.on {
+        max-height: 800px;
+    }
+    
+    .menu > nav > ul> li {
+        float: none;
+        padding: 0;
+    }
+    
+    .navigation-top-fixed.navigation-collapse .menu > nav > ul> li {
+        padding: 0;
+    }
+    
+    .menu > nav > ul> li > a {
+        display: block;
+        padding: 15px 20px;
+    }
+    
+    .about-left {
+        margin-bottom: 30px;
+    }
+    
+    .services {
+        padding: 60px 0 30px;
+    }
+    
+    .box-service {
+        margin-bottom: 30px;
+    }
+    
+    .fun-fact {
+        padding: 60px 0 30px;
+    }
+    
+    .box-fun-fact {
+        margin-bottom: 30px;
+    }
+    
+    .item-blog {
+        margin-bottom: 30px;
+    }
+    
+    .form {
+        margin-bottom: 30px;
+    }
+    
+    .blog_page_left {
+        margin-bottom: 60px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    
+    .about-center {
+        margin-bottom: 60px;
+    }
+    
+    .portfolio-item-inner a img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+    .banner_text h1 {
+        font-size: 35px;
+        line-height: 42px;
+    }
+    
+    .banner_text h4 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    
+    .title_section h2 {
+        font-size: 38px;
+    }
+    
+    .title_section h3 {
+        margin: -16px 0 0 0;
+        font-size: 38px;
+    }
+    
+    .text_hire h2 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+    
+}
